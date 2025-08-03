@@ -325,7 +325,7 @@ small#store{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 0 600px;
+  flex: 0 0 350px;
   margin: 0 15px;
   text-align: center;
   background:#f4f4f4 ;
@@ -1093,6 +1093,7 @@ color: #fff;
 font-family:'Roboto',sans-serif ;
 font-weight: 200;
 }
+
 
 
  
