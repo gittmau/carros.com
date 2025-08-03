@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco | BrandsCars store</title>
+<meta name="description" content="Entre em contato com a equipe da BrandsCars store para tirar dúvidas, solicitar informações ou agendar uma visita. Estamos prontos para te atender.">
+  
+  <link rel="icon" href="img/logo1.png">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="media.css">
+  
+</head>
+<body>
+   
+
+ <header id="topo">  
+    <div class="itensTopo">
+     <a href="index.html"><img src="img/logo1.png" id="logo"  alt="logo-tipo"></a>  <!--Logo-->
+    </div>
+             
+    <div class="itensTopo">
+      <p id="btnMenu">☰</p>
+    </div>
+
+    <nav>
+      <ul id="menu">
+      <a href="index.html"><li id="liHome">Home</li></a>
+      <a href="sobre.html"><li>Sobre</li></a> 
+       <a href="index.html#consignado" class="menu-link"> <li>Consignado</li> </a>  
+      <a href="galeria.html"> <li>Nossos Clientes</li> </a>               
+      <a href="cadastro.html"><li>Ficha cadastral</li></a>        
+      </ul> 
+    </nav>
+      
+</header>
+
+<main> 
+
+<div id="containerGeral">  
+
+  <div id="introContato">
+
+    <div class="conteudoItroContato">
+      <p class="nossoContato">Nosso contato</p>
+      <p class="faleConosco">Fale conosco agora mesmo!</p>
+    </div>
+
+    <div class="conteudoItroContato">
+      <img src="img/contatoFone.png" alt="">
+    </div>
+    
+  </div>   
+   
+  <section id="containerForm">
+
+    <div class="conteudoContainerForm">
+
+      <div class="iconesContato">
+        <img src="img/location.png" alt="localização">
+        <p class="paragrafoContato
+        ">Endereço</p>
+        <p class="paragrafoContato
+        ">Rua Caraipé das Águas, 626 Jardim dos Ipês - São Paulo/SP</p>
+      </div>
+
+      <div class="iconesContato">
+        <img src="img/fone.png" alt="telefone">
+        <p class="paragrafoContato
+        ">Fone</p>
+        <a class="paragrafoContato
+        "href="https://wa.me/5511947477637" target="_blank">whatsaap (11) 94747 - 7637</a>
+      </div>  
+      
+      <div class="iconesContato">
+        <img src="img/email.png" alt="email">
+        <p class="paragrafoContato">e-mail</p>
+     <a href="mailto:brandscars@outlook.com?subject=Olá&body=Olá Carlinha, queria saber mais iformações sobre o financiamento!" class="paragrafoContato">brandscars@outlook.com</a>
+      </div>
+
+    </div>
+
+    <div class="conteudoContainerForm">
+
+      <form action="contact.php" method="post" id="formularioContato">
+    
+      <input type="text" name="nome" id="nome" placeholder="Seu nome*" required><br>
+    
+      <input type="email" name="email" id="email" placeholder="Seu email*" required><br>
+    
+      <input type="tel" name="celular" id="celular" placeholder="Seu telefone*" required><br>
+      
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10" required style="margin-top:10px" placeholder="Mensagem*"></textarea><br>
+
+      <button type="submit" id="btnEnviarContato">Enviar</button>
+
+      </form>
+    </div>   
+
+    
+  </section>
+
+  <footer>
+   
+    <div class="conteudoFooter">
+      <img src="img/deliviery.png" class="imgRede" id="imgSvg"  alt="">
+      
+      <h3>Entrega rápida</h3>      
+
+      <p>Realizamos entregas em todo o país. Receba seu veículo novo no conforto da sua casa.</p>
+    </div>
+
+     
+    <div class="conteudoFooter">
+       <img src="img/globalRedes.png" class="imgRede" id="iconRedes"  alt="globalRedes">
+      <h3 id="tituloRedesSociais">Redes sociais</h3>
+      
+      <a href="https://www.instagram.com/brandscarsstore/" target="_blank"> <img src="img/insta.png" class="imgRede" alt="instagram"> </a>
+
+      <a href="https://www.facebook.com/5tg0mf0bzj" target="_blank"> <img src="img/face.png" class="imgRede" alt="facebook"> </a>
+
+      <a href="https://www.tiktok.com/@brandscarsstore?is_from_webapp=1&sender_device=pc" target="_blank"> <img src="img/tikTok.png" class="imgRede" alt="tiktok"> </a>
+
+      <a href="https://wa.me/5511947477637" target="_blank"> <img src="img/whats.png"  class="imgRede" alt="whatsaap"> </a>
+    </div>
+    <div class="conteudoFooter">
+      <img src="img/locationRodape.png"  class="imgRede" alt="">
+      <h3>Endereço</h3><p>Rua Caraipé das Águas, 626  Jardim dos Ipês - São Paulo/SP</p>
+    </div>
+		
+		<div class="conteudoFooter" id="linksTodosCarrosFooter">
+			  <ul>
+				<li><a href="chevrolet.html"> Chevrolet <a/></li>
+				<li><a href="fiat.html"> Fiat<a/></li>
+				<li><a href="ford.html"> Ford<a/></li>
+				<li><a href="hyundai.html"> Hyundai<a/></li>
+				<li><a href="volkswagem.html"> Volkswagem<a/></li>
+				</ul>
+			 </div>
+  </footer>
+
+  <div id="zapFixo"> <a href="https://wa.me/5511947477637" target="_blank"> <img src="img/zap.png" alt=""> </a> </div>
+
+   <div id="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9188581496023!2d-46.41401797220772!3d-23.49943196425741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6391c209bb3d%3A0xbfb99e4cb2d95656!2sRua%20Caraip%C3%A9%20das%20%C3%81guas%2C%20626%20-%20Jardim%20dos%20Ipes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008161-360!5e0!3m2!1spt-BR!2sbr!4v1748822941208!5m2!1spt-BR!2sbr" width="" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+   <div id="autoral">
+   <p>  &copy; Todos os direitos reservados - BrandsCars &reg;</p>
+    <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank" style="text-decoration: underline;color: #ccc;">By Mauricio Honorato</a>
+   </div>
+
+
+
+
+</div>   
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>  

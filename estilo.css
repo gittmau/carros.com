@@ -1,0 +1,1098 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;}
+
+
+@font-face {
+  font-family: 'jacksilver';
+  src: url('font/Jacksilver.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+ html{scroll-behavior: smooth;}
+
+
+body{background-color: #ddd;}
+
+main{background-color: #eee;}
+
+
+img{width: 100%;}
+
+a{text-decoration: none;}
+
+#topo{
+    position: relative;
+    width:100%;
+    height: 100px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+.itensTopo{
+    margin:0px 15px; 
+}
+
+#logo{
+    width:20%;    
+}
+
+#btnMenu{
+    font-size:26px;
+    cursor: pointer;
+    color: #fff;
+    /* filter:drop-shadow(1px 1px 2px #fff);*/
+    border-radius: 5px;
+}
+
+.menuDrop{
+  display: none;
+}
+
+    
+#menu{
+   display: block;
+   background:linear-gradient(to bottom,#000,#111,#222);    
+   position: absolute;
+   width: 100%;
+   top:100px;
+   right:0;
+   height: 0;
+   z-index: 1000;  
+   transition: .6s;     
+   visibility: hidden;   
+   overflow-y: hidden;
+    
+}
+
+#menu li{
+    list-style: none;  
+    color:#ccc;
+    font-weight: 400; 
+}
+
+
+#menu a{
+    display: block;
+    padding: 1rem 0;
+    margin:0 1rem;
+    border-bottom: 2px solid #222;
+}
+
+
+
+#menu.active{
+    height: calc(100vh - 90px);
+    visibility: visible;
+            
+}
+
+.imagemCapa{
+    width:100%;
+    height: 450px;
+    background: url('img/capa.gif')no-repeat center/cover;
+    margin-top: 0;
+}
+
+
+.box_titulo {
+  text-align: center;
+  margin-top: 50px;
+  animation: slideIn 1.5s ease-out forwards;
+  opacity: 0;
+  padding:0px 5px;
+  }
+
+  @keyframes slideIn {
+  0% {
+  transform: translateY(100px);
+  opacity: 0;
+  }
+  100% {
+  transform: translateY(0);
+  opacity: 1;
+  }
+}
+
+.titulo_inicial {
+font-size: 2rem;
+margin:0;
+font-family: 'Poppins',sans-serif;
+color: #111;
+}
+
+.subtitulo {
+font-size: 1rem;
+color: #555;
+}
+
+small#store{
+  font-family: 'Poppins';
+  font-weight: 200;
+  color: #000;
+}
+
+
+/*Seção carros----------------------------------------------------*/
+
+.car-section {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.car-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.car-card {
+  border:1px solid #ccc;
+  border-radius:10px 10px 0px 0px;
+  padding: 0px;
+  color: #333;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.car-card img{
+  border-radius:10px 10px 0px 0px;
+
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+}
+
+.car-card h3{
+  text-transform: uppercase;
+}
+
+.car-card h3,p{
+  padding: 10px;
+  font-family: 'Poppins';
+}
+
+.car-card p{
+  font-weight: 600;
+  color: #333;    
+  font-weight: 300;
+}
+
+
+
+.botao-vermais {
+  display: inline-block;
+  padding:5px 20px;
+  background: linear-gradient(135deg, #111, #000);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  margin-left:10px;
+  text-transform: lowercase;
+  visibility: hidden;
+}
+
+.botao-vermais:hover {
+  border: 1px solid #222;
+  background: none;
+  color: #000;
+}
+
+.botaoStatus,#btnStatusTodosCars2{
+  display: inline-block;
+  padding:5px 20px;
+  background-color: seagreen;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  margin-left:10px;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.botaoStatus:hover,#btnStatusTodosCars2:hover{
+  background-color: rgb(6, 58, 29);
+}
+
+
+/*Seção consignado------------------------------------------------------------*/
+
+
+#consignado{
+  max-width: 1200px;
+  padding: 20px;
+  font-size: .9em;
+  margin: auto;
+  margin-bottom: 50px;
+	background:#f9f9f9;
+	
+}
+
+.conteudoConsignado{
+  margin: 15px auto;
+}
+
+.conteudoConsignado h3{
+  color: #222;
+}
+
+.conteudoConsignado p{
+  padding: 5px 0px;
+  
+}
+
+.conteudoConsignado:nth-child(2){height: 200px;overflow-y: scroll;padding: 20px;}
+
+#btnContatoConsig{
+  width:90px;
+  display: block;
+  text-align: center;
+  padding: 7px;
+  background-color: brown;
+  color: #e7e7e7;
+  border-radius: 5px;
+}
+
+#btnContatoConsig:hover{
+  background: #000;
+  color: #fff;
+}
+
+
+ 
+
+/*Seção Marcas--------------------------------------*/
+
+.titulosCarrossel{text-align: center;padding: 10px;font-size: .7em;color: #333;margin-top:0px;margin-bottom: 50px;}
+
+.carousel-track img {width: 120px;margin: 0 15px;flex-shrink: 0;}
+
+.car-carousel {overflow: auto;width: 100%;}
+
+.btnsCarrossel{display: none;}
+
+.car-carousel-wrapper {display: flex;align-items: center;justify-content: space-between;overflow: hidden;margin-bottom: 100px;background-color: #f4f4f4;padding: 10px;width: 100%;}
+
+.car-carousel {overflow: hidden;width: 100%;}
+
+.carousel-track {display: flex;transition: transform .5s ease-in-out;}
+
+
+/*Depoimentos-------------------------------------------------------*/
+
+
+.testimonials-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:auto;
+  width:100%;
+  margin-top: 0px;
+  background-color: #ddd;
+  margin-bottom: 150px;
+}
+
+.testimonials-carousel {
+  overflow-x:scroll;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+  height: 200px; /* ou use min-height se quiser que ela possa crescer */
+  overflow: hidden; /* evita que ultrapasse o espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 600px;
+  margin: 0 15px;
+  text-align: center;
+  background:#f4f4f4 ;
+  padding: 20px;
+  border-radius: 10px;  
+  font-size: .7em;
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;  
+  display: block;
+  margin: 0 auto;
+
+}
+
+.stars {
+  color: rgb(219, 187, 3);
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+/*Página sobre---------------------------------------------------*/
+
+.sobre {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url('img/imgSobre.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.filtro-escuro {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 0.5 é a opacidade */
+}
+
+
+.conteudo {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding:10px;
+  }
+
+.titulo-animado {
+  font-size: 2rem;
+  animation: deslizeCima 1.2s ease-out;
+  }
+
+@keyframes deslizeCima {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.texto {
+   display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.missaoEmpresa{
+  margin: auto;
+  padding: 20px;
+}
+
+.textoMissao{
+  margin-top: 50px ;
+}
+
+.textoMissao h2{
+  color: #999;
+  font-weight: 200;
+}
+
+.textoMissao p{
+  padding: 10px 0px;
+  color: #333;
+  font-size: .9em;
+}
+
+#trechoTextoSobre{
+  visibility: hidden;
+  
+}
+
+.entregas{
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.conteudoEntregas{
+  text-align: center;
+  color: #555;
+}
+
+
+#imgPerfil{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#btnContatoSobre{
+  display: block;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  background-color: brown;
+  color: #fff;
+  margin: 25px auto;
+  box-shadow: 2px 3px 4px #555;
+}
+
+.assinaturaCarla{  
+  font-family: 'Jacksilver';
+  text-align:center;
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+
+/*Página detalhes---------------------------------------------------------------*/
+
+
+#marcaBrands{
+  max-width: 1200px;
+  margin: auto;
+  height:50px;
+  text-align: center; 
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 200;
+  transform: translateY(8px);
+}
+
+#marcaBrands p{   
+  color:#333;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+#conteudoPrincipal{
+  max-width: 95%;
+  margin:  auto;
+  margin-bottom:0px;
+  padding: 10px 0px;  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  
+}
+
+
+.boxConteudo li{
+ font-family: 'Poppins';
+ font-weight: 300;
+ 
+}
+
+
+.boxConteudo img {
+  width: 100%;
+  height: 300px; /* ou qualquer altura desejada */
+  object-fit: cover; /* ou contain, se quiser que a imagem inteira apareça */
+  display: block;
+}
+
+.especificacoesCarro li{
+  font-size: .9em;
+  line-height: 1.2;
+  color: #555;
+}
+
+
+.especificacoesCarro{
+list-style: none;
+padding: 15px;
+border-radius: 5px;
+}
+    
+.tituloDetalhes{
+color:#222;
+padding: 10px;
+}
+
+.preco{
+font-size: 1.8em;
+color: brown;
+font-family: 'Roboto';
+font-weight: 800;
+}
+
+#textoDetalhes{
+color: #888;
+padding: 10px;
+}
+
+
+.boxConteudo{    
+margin: auto;
+margin-top: 10px;
+width: 98%;
+}
+
+    
+
+.boxConteudo img{
+margin-top: 15px;
+width:30%;
+}
+
+.boxConteudo:nth-child(1){
+display: flex;
+justify-content: space-evenly;
+
+}
+
+
+.boxConteudo:nth-child(1) img{
+height: 100px;     
+}  
+
+.imagemGrande{
+width: 95%;
+margin: auto;
+}
+
+
+.boxConteudo:nth-child(2) img{
+width: 100%;
+}
+
+#btnProposta{
+width:98%;
+display: block;
+border:1px solid #161630;
+text-align: center;
+padding: 10px;
+margin: 0px;
+background-color: #000;
+color: #fff;
+border:1px solid  transparent;
+border-radius: 5px;
+font-weight: 500;
+margin: auto;
+margin-top: 10px;
+}
+
+#btnProposta:hover{
+  background-color: brown;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+
+#descricaoCarro{
+  padding: 20px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom:50px;
+}
+
+
+.conteudoDescricao li{
+   font-family: 'Poppins',sans-serif;
+   font-weight: 200;
+   list-style-type: circle;
+  }
+
+#tituloDescricao{
+  margin-bottom: 10px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 200;
+  color: #000;
+}
+
+
+/*Página contato-------------------------------------------------*/
+
+#introContato{
+  padding: 45px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+}
+
+.nossoContato{
+  font-size:1.5rem;
+  color: #777;
+  text-transform: uppercase;
+  background-color: #222;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+.paragrafoContato{
+  font-size: 1rem;
+}
+
+.faleConosco{
+  color: #333;
+}
+
+#introContato img{
+  width: 100%;
+}
+
+#containerForm{
+  font-size: smaller;
+  padding: 25px;
+  width: 100%;
+  margin-top: 50px;
+  
+}
+
+
+.iconesContato{
+  width: 98%;
+  margin: auto;
+  text-align: center;
+  padding: 20px ;
+  color: #333;
+}
+
+.iconesContato a{
+  color: #333;
+  display: block;
+}
+
+.iconesContato a:hover{
+  color: #000;
+  font-weight: 600;
+}
+
+.iconesContato img{
+  width: 16%;
+  display: block;
+  margin: auto;
+}
+
+#formularioContato{
+  width: 98%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#formularioContato input{
+  padding: 15px;
+  outline-color: #777;  
+  border: none;
+  border: 1px solid #888;
+  background-color:#f9f9f9;
+}
+
+#formularioContato input:hover,textarea:hover{
+  border: 1px solid #222;
+}
+
+
+
+textarea{
+  outline-color: #777;
+  padding: 15px;
+  border: none;  
+  border: 1px solid #888;
+  margin-top: 0;
+  background-color:#f9f9f9;
+}
+
+#btnEnviarContato{
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+
+#btnEnviarContato:hover{
+  background-color: #222;
+}
+
+
+/*Ficha Cadastral------------------------------------------------*/
+
+#formularioCadastro{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 10px;
+  margin:auto;
+  padding-top: 50px;
+  font-size:.8em;
+  width:90%;
+}
+
+label{
+font-weight:bold;}
+
+
+.campo {
+  display: flex;
+  flex-direction: column;  
+}
+
+.campo input,.campo select{
+  padding: 12px;
+  border: none;
+  border: 1px solid #888;
+  border-radius:5px;
+  margin: 3px 0px;
+  outline-color: brown;
+  background-color:#ffff;
+}
+
+.campo input:hover, .campo select:hover{
+  border: 1px solid #000;
+}
+
+legend{
+  font-size: .9rem;
+  color: brown;
+  font-size: x-large;
+}
+
+
+#btnEnviar{
+  width:150px;
+  border: none;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#btnEnviar:hover{
+  background-color: #333;
+}
+
+
+/*Página chevrolet---------------------------------------*/
+
+#barraSemiNovos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.conteudoSemiNovos{
+  padding: 10px;
+  color: #333;
+}
+
+
+.conteudoSemiNovos img{
+  width: 80%;  
+}
+
+
+#containerTodos{
+  
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.todosSemiNovos{
+  margin-top:40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;  
+  border-radius: 15px 15px 5px 5px;
+}
+
+.todosSemiNovos img{
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+  
+}
+
+.precoSeminovos{
+  color: brown;
+  font-weight: 600;
+}
+
+.btnPropostaSeminos{
+  margin: 20px 10px;
+  width: 120px;
+  background-color: #000;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.btnPropostaSeminos:hover{
+  background-color: #222;
+}
+
+#btnStatusTodosCars{
+  background-color: brown;
+}
+
+#btnStatusTodosCars:hover{
+  background-color: seagreen;
+}
+
+/*Pagina Fiat--------------------------------------------*/
+
+#logoFiat{width:100px;}
+
+
+/*Galeria----------------------------------------------------*/
+
+
+#barraGaleria{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+	background:#f9f9f9;
+}
+
+.conteudoGaleria{
+  width: 45%;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+  
+}
+
+
+.conteudoGaleria img{
+  width: 45%;   
+   
+}
+
+.gallery {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	
+}
+
+.thumb {
+  width: 90%;
+  height: 300px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  object-fit: cover; /* ou 'contain', se preferir ver a imagem inteira */
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px #777;
+
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+#lightbox.show {
+  display: flex;
+  z-index: 5000;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.close {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+	font-weight:100;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.anterior, .proximo {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+
+/*Rodapé------------------------------------------------------*/
+
+footer{
+margin-top: 50px;
+background:#111;
+color: #fff;
+}
+
+.conteudoFooter{
+width:80vw;
+margin: auto;       
+text-align: center;
+padding: 50px 0px;
+}
+
+.conteudoFooter h3{
+color: #fff;
+margin-bottom: 0px;
+}
+
+.conteudoFooter a{
+color: #ddd;
+text-decoration: none;
+}
+
+
+#linksTodosCarrosFooter ul{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ 
+}
+
+#linksTodosCarrosFooter li{
+list-style:none;
+padding:5px;
+text-decoration:underline;
+}
+  
+
+#imgSvg{
+width:18%;
+}
+
+#iconRedes{width:15%;}
+
+.imgRede{
+width:12%;
+margin: 15px 5px;
+}
+
+.imgRede {
+transition: transform 0.3s ease, filter 0.3s ease;}
+
+.imgRede:hover {transform: scale(1.1) rotate(-3deg);filter: brightness(1.2);}
+
+#zapFixo{
+width:55px;
+height:55px;
+background:#25D366;
+border-radius:50%;
+position: fixed;
+bottom:15px;
+right:10px;
+display:flex;
+align-items:center;
+
+}
+
+#zapFixo img{
+width:80%;
+display:block;
+margin:auto;
+}
+
+#mapa{
+width:100%;
+margin: auto;
+}
+    
+iframe{
+width:100%;
+}
+
+#autoral{
+text-align: center;
+padding: 10px 0px;
+background-color: #111;
+color: #fff;
+font-family:'Roboto',sans-serif ;
+font-weight: 200;
+}
+
+
+ 

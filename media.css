@@ -1,0 +1,340 @@
+
+/*Responsivo--------------------------------------------------------------------*/
+
+
+@media(min-width:768px){
+
+  #topo{justify-content:flex-end;}
+
+  .itensTopo{margin:0px 10px;width:100%;}	
+
+  #btnMenu{font-size:36px;float:right}
+
+  .car-card img {width: 100%;height: 300px;object-fit: cover;}
+	
+	.boxConteudo:nth-child(1) img{height: 150px;} 
+	
+
+
+  /*Seção consignado------------------------------------------------------------*/
+
+  #consignado{display: flex; justify-content: center;align-items: center;margin-top:150px;margin-bottom: 100px;padding:0px;border-radius:50px 0px 0px 0px;}
+
+  .conteudoConsignado{width: 48%;}     
+
+  /*Carrossel------------------------------*/
+
+ .car-carousel-wrapper {display: flex;align-items: center;justify-content: center;overflow: hidden;margin-bottom: 100px;}
+
+ .car-carousel {overflow: hidden;width: 100%;}
+
+ .carousel-track {display: flex;transition: transform 0.5s ease-in-out;}
+
+ .titulosCarrossel h1{font-family: 'Poppins';font-weight: 500;}
+
+  .titulosCarrossel{text-align: center;font-size: 1.2em;padding:20px 40px;width: 85%;margin: 50px auto;margin-bottom:100px;} 
+
+ .btnsCarrossel {background-color:transparent;color: #333;border: none;padding: 10px 16px;margin: 0 10px;border-radius: 2px;font-size: 20px;cursor: pointer;transition: background-color 0.3s ease;display: block;}
+
+ .btnsCarrossel:hover {background-color: #fff;color: #333;}
+
+ .testimonial {flex: 0 0 600px;height: 200px;}    
+
+ .carousel-track img {width: 150px;margin: 0 15px;flex-shrink: 0;}
+
+	
+ /*Testemunhos----------------------------------------------*/
+    
+ .testimonial {height: 200px; flex: 0 0 600px;overflow: hidden;}
+
+  .testimonials-wrapper {overflow: hidden;}
+
+ .testimonials-carousel {overflow: hidden;} 
+ 
+ 
+
+
+  /*detalhes carros---------------------------------------------------*/
+
+  #marcaBrands{margin-top: 0px;text-align:left;transform: translateY(40px);}
+
+  #marcaBrands > p{margin-left:3%;font-size: x-large;}
+
+  #conteudoPrincipal{margin-top: 70px;margin-bottom:5px;border: none;background-color: #f9f9f9;}
+
+  .boxConteudo img {height: 500px;}
+
+  #btnProposta{width:100%;padding: 8px;}  
+  
+  #descricaoCarro{display: flex;justify-content:space-between;align-items: center;background-color:#f9f9f9;margin-top: 0;}
+
+  .especificacoesCarro{border: 1px solid #ccc ;}
+
+
+  /*Seçao sobre--------------------------------------------------*/
+
+  .sobre{height: 100vh;}
+
+  .titulo-animado {font-size: 2.5rem;margin-top: 0;}
+
+  .missaoEmpresa{display: flex;align-items: left;justify-content: space-between;width:100%;}
+
+  .textoMissao{width: 50%;padding: 10px;text-align: center;}
+
+  .textoMissao > p{font-size: .7em;}
+
+  .texto {width: 100%;font-size: 1rem;font-weight: 100;animation: fadeIn 2s ease;text-align: center;padding: 10px 5vw; /* Adiciona espaçamento interno nas laterais */box-sizing: border-box; /* Garante que o padding não ultrapasse os 100% */
+  display: block;text-align: center;padding: 25px;width:100%;margin: 10px auto;font-size: 1rem;}
+  
+  
+  .entregas{display: flex;align-items: center;justify-content: space-around;width: 95vw;margin: auto;border: 1px solid #ccc;}
+
+  .conteudoEntregas{width: 45%;}
+
+  #imgPerfil{width: 150px;height: 150px;}
+
+  .assinaturaCarla{padding-top:80px;font-size: 2em;}
+
+  #btnContatoSobre:hover{background-color: #222;transition: all .5s;}
+	
+	/*Ficha cadastral-----------*/
+	
+	#formularioCadastro{width:70%;margin:0 25px}
+
+  /*Contato-------------------------------*/
+
+  #introContato{padding: 30px 20px;margin-top: 0px;}
+
+  .iconesContato img{width: 8%}
+
+  #formularioContato{width: 80%;}
+
+  #formularioContato input{padding: 20px;}
+
+  /*Todos os carros---------------------------------*/
+
+
+ .containerTodos{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;}
+  
+ .todosSemiNovos{width: 48%;margin: 10px auto;}
+
+ /*Galeria--------------------------------------*/
+
+ .thumb {width: 310px;}
+ 
+ .conteudoGaleria p{font-size: x-large;padding-left: 20px;}  
+  
+
+  /*Footer--------------------------*/
+  
+  #imgSvg{width:10%;}
+
+  .imgRede{width:8%;}
+  
+
+}
+
+
+
+@media(min-width:1024px){
+
+  #containerGeral{margin: auto;}
+
+   html{scroll-padding-top:100px}
+
+  #topo{background:rgba(0,0,0,0.9);position: fixed;top: 0;left: 0;z-index: 1000;justify-content:space-between;border-bottom:1px solid #111}
+	
+	 
+ #logo{width:80px;margin:0 15px}
+
+ #todosCarros{list-style: none;cursor: pointer;width:140px}
+
+ .menuDrop{display: block;}
+
+ .dropDow{position: absolute;background:linear-gradient(#000,rgb(17, 1, 1));padding:5px 10px;visibility: hidden;opacity: 0;transition: opacity 0.3s ease;}
+
+ .menuDrop:hover .dropDow {visibility: visible;opacity: 1;}
+
+ .dropDow li a{color: #999;}
+
+ .dropDow li{margin: 15px 0px;list-style: none;padding: 5px 0px;}
+
+ .dropDow li a:hover{color:#fff}
+ 
+  #btnMenu{display: none;}
+   
+  #menu{height:25px;position: relative;width:90%;display: flex;justify-content: center;align-items: center;gap:.1rem;margin-right:220px;background:none;visibility: visible;overflow-y: visible;top:0;}
+	
+	#menu a{display: block;padding:0;}
+
+  #menu a{margin:0;border-bottom: none;}
+
+  #menu li{padding: 10px;border: 1px solid transparent;}
+
+  #menu li:hover{color: #fff;border-radius: 2px;transition: .5s;}
+
+  #logo:hover{filter: drop-shadow(1px 1px 1px #ccc);transition: all .5s;}    
+
+  .imagemCapa{margin-top:100px;}
+
+  .box_titulo{margin-top: 100px;margin-bottom: 50px;}
+
+  .titulo_inicial {font-size: 3rem;}
+	
+
+  #consignado{padding: 0;width:95%;}
+
+  .conteudoConsignado{width: 48%;}
+
+  .conteudoConsignado img{border-radius: 50px 0px 50px 0px;}
+
+  .conteudoConsignado:nth-child(2){height: 300px;overflow-y: auto;padding: 20px;font-size: .9em;}
+
+  .imgRede{width:8%;}
+
+  #conteudoPrincipal{display: flex;justify-content:center;align-items: center;max-width:1200px;padding: 20px 10px;}
+
+  #descricaoCarro{max-width: 1200px;margin: auto;}
+
+  .boxConteudo{width:30%;display: flex;flex-direction: column;justify-content: center;}
+    
+  .boxConteudo img{margin-top: 10px;}
+
+  #imagem1,#imagem2,#imagem3{object-fit: cover;}
+
+  .boxConteudo:nth-child(1){flex-direction: column;} 
+    
+  .imagemGrande{width: 85%;margin:0 auto; }   
+
+  .boxConteudo:nth-child(1) img{width:75%;height:122px;margin: 7px auto;} 
+
+  .boxConteudo:nth-child(3){width: 50%;margin: auto;padding: 15px;}
+
+  #btnProposta{padding: 10px;}  
+  
+  .conteudoSobre p{font-size: 1em;letter-spacing:1px;}
+
+  .boxConteudo img {width: 100%;height: 400px; object-fit: cover;display: block;}
+
+  .titulosCarrossel{width:65%;}
+
+  #marcaBrands{margin-top: 100px;}
+
+  #marcaBrands > p{margin-left: 2%;}
+
+  .car-carousel {overflow: hidden;width:75%;}
+
+  .titulo-animado {font-size: 4rem;}
+
+  .missaoEmpresa{max-width:1200px;}
+
+  .texto {text-align: center;padding: 25px;width:80%;}
+
+  .textoMissao{width: 42%;}
+
+  .textoMissao > p{font-size: .9rem;}
+
+  .entregas{width: 85%;}
+
+  .sobre{margin-top:100px;}
+
+  /*Pagina contato----------------------------------*/
+
+  .nossoContato{font-size: xx-large;}
+
+  .iconesContato img{width: 10%;}
+
+  #containerForm{display: flex;align-items: center;justify-content: space-around;margin: auto;}
+
+  .conteudoContainerForm{width: 50%;padding: 45px ;}
+
+  #formularioContato{width: 100%;margin: 0;}
+
+  #formularioContato input{padding: 20px;}
+  
+  #introContato img{width: 100%;}
+  
+  #introContato{margin-top: 100px;}
+
+  #formularioCadastro{max-width: 1000px;margin: auto;margin-top:100px;grid-template-columns: 1fr 1fr;padding:10px;padding-top:50px}
+
+  /*Galeria-----------------------------------------------*/
+
+  #barraGaleria{margin-top: 100px;justify-content: flex-start;padding:20px;}
+
+  .gallery{max-width: 1500px;margin: 100px auto;}
+
+  .conteudoGaleria{text-align: left;width: 50%;}
+
+  .conteudoGaleria img{width: 20%;}
+
+  .thumb {width: 450px;height: 350px;}
+
+  .lightbox-img {max-width: 50%;height: 610px;}
+
+  
+  /*Footer--------------------------------------------------*/
+
+  footer{display: flex;margin-top:50px;height: 500px;}
+  
+ .imgRede{width:8%;margin-top: 15px;}
+
+  #tituloRedesSociais{margin-top: -20px;}
+
+  /*Todos os carros---------------------------------*/
+  
+
+ #barraSemiNovos{margin-top: 100px;justify-content:flex-start ;padding: 40px 20px;font-size: x-large;}
+
+ .containerTodos{padding: 60px 10px;max-width: 1200px;margin: auto;}
+
+ .conteudoSemiNovos img{width: 100%;}
+
+ .todosSemiNovos{width: 32%;margin: 20px auto;}
+ 
+ #linksTodosCarrosFooter{display:none;}
+
+
+  @keyframes slideIn {0% {transform: translateY(200px);opacity: 0;}100% {transform: translateY(0);opacity: 1;}
+
+  
+}
+
+@media(min-width:1280px){
+
+  #menu li{font-size: 1rem;} 
+	
+	#todosCarros{font-size:1rem;}
+
+  .thumb {width: 380px;height: 350px;}
+
+  #containerForm{width: 86%;}
+
+
+}
+
+@media(min-width: 1920px){
+
+  .conteudoGaleria img{width: 20%;}  
+
+}
+
+
+@media(min-width: 1921px){
+  
+  main{border: 1px solid #ccc;max-width: 1920px;margin: auto;}
+
+  #topo{position: relative;;max-width: 1920px;margin: auto;}
+
+  #marcaBrands{transform: translateY(8px);}
+
+  #conteudoPrincipal{margin-top: 0px;}
+
+  
+
+  /*Contato--------------------------------*/
+
+  
+
+  
+}

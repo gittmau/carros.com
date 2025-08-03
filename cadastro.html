@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financiamento de Carros | Condições Especiais | BrandsCars store</title>
+<meta name="description" content="Descubra as melhores opções de financiamento de veículos com taxas competitivas. Faça uma simulação agora e conquiste seu carro com a BrandsCars store.">
+  <link rel="icon" href="img/logo1.png">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="media.css">
+  
+</head>
+<body>
+   
+
+ <header id="topo">  
+    <div class="itensTopo">
+     <a href="index.html"><img src="img/logo1.png" id="logo"  alt="logo-tipo"></a>  <!--Logo-->
+    </div>
+             
+    <div class="itensTopo">
+      <p id="btnMenu">☰</p>
+    </div>
+
+    <nav>
+      <ul id="menu">
+      <a href="index.html"><li id="liHome">Home</li></a>
+       <a href="sobre.html"><li>Sobre</li></a> 
+      <a href="index.html#consignado" class="menu-link"> <li>Consignado</li> </a> 
+      <a href="galeria.html"> <li>Nossos Clientes</li> </a>               
+      <a href="contato.html"><li>Contato</li>  </a>
+            
+      </ul> 
+    </nav>
+      
+</header>
+
+<main> 
+<div id="containerGeral">   
+
+   <form action="cadastro.php" method="post" id="formularioCadastro">
+        
+          
+        <legend>Ficha Cadastral </legend>   <br> 
+
+        <div class="campo">
+            <label>Carro do seu interesse:</label>
+        <input type="text" name="carro_interesse" required>
+        </div>
+
+        <div class="campo">
+            <label>Valor máximo da parcela:</label>
+        <input type="text" name="valor_parcela" required>
+        </div>
+
+        <div class="campo">
+            <label>Tem valor para entrada?</label>
+        <input type="text" name="valor_maos" required>
+        </div>
+
+        <div class="campo">
+            <label>Nome completo:</label>
+        <input type="text" name="nome_completo" required>
+        </div>
+
+       <div class="campo">
+         <label>CPF:</label>
+        <input type="text"  name="cpf" required>
+       </div>
+
+        <div class="campo">
+            <label>RG:</label>
+        <input type="text" name="rg" required>
+        </div>
+
+        <div class="campo">
+            <label>CNH:</label>
+        <select name="cnh" id="">
+            <option value="sim">sim</option>
+            <option value="não">não</option>
+        </select>
+        </div>
+
+        <div class="campo">
+            <label>Data de nascimento:</label>
+        <input type="date" name="data_nascimento" required>
+        </div>
+
+        <div class="campo">
+            <label>Nome da mãe:</label>
+        <input type="text" name="nome_mae" required>
+        </div>
+
+        <div class="campo">
+            <label>Nome do pai:</label>
+        <input type="text" name="nome_pai" required>
+        </div>
+
+        <legend>Dados Residenciais</legend><br>
+
+        <div class="campo">
+            <label>Endereço:</label>
+        <input type="text" name="endereco" required>
+        </div>
+
+        <div class="campo">
+            <label>Número:</label>
+        <input type="text" name="numero" required>
+        </div>
+
+        <div class="campo">
+            <label>Bairro:</label>
+        <input type="text" name="bairro" required>
+        </div>
+
+        <div class="campo">
+            <label>CEP:</label>
+        <input type="text" name="cep" required>
+        </div>
+
+        <div class="campo">
+            <label>Cidade:</label>
+        <input type="text" name="cidade" required>
+        </div>
+
+        <div class="campo">
+            <label>Tempo que reside:</label>
+        <input type="text" name="tempo_reside" required>
+        </div>
+
+        <div class="campo">
+            <label>Telefone:</label>
+        <input type="tel" name="telefone" required>
+        </div>
+
+       <div class="campo">
+         <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+       </div>
+
+        <legend>Dados do Empregador</legend><br> <!-- Sobre a renda -->
+
+       <div class="campo">
+         <label>Nome da empresa:</label>
+        <input type="text" name="nome_empresa" >
+       </div>
+
+        <div class="campo">
+            <label>Endereço:</label>
+        <input type="text" name="endereco_empregador" >
+        </div>
+
+        <div class="campo">
+            <label for="">CEP:</label>
+        <input type="text" name="cepEmpresa" >
+        </div>
+
+        <div class="campo">
+            <label>Telefone:</label>
+        <input type="tel" name="telefone_empregador" >
+        </div>
+
+        <div class="campo">
+            <label>Seu cargo:</label>
+        <input type="text" name="cargo" >
+        </div>
+
+        <div class="campo">
+            <label>Tempo de empresa:</label>
+        <input type="text" name="tempo_empresa"><br><br>
+        </div>
+
+        <legend>Autônomo</legend><br> <!-- Sobre a renda -->
+
+        <div class="campo">
+            <label>Sua função:</label>
+        <input type="text" name="funcao">
+        </div>
+
+        <div class="campo">
+            <label>Renda:</label>
+        <input type="text" name="renda">
+        </div>
+
+        <div class="campo">
+            <label>Endereço que atua:</label>
+        <input type="text" name="endereco_autonomo">
+        </div><br>
+
+        <legend>Empresário</legend><br> <!-- Sobre a renda -->
+
+        <div class="campo">
+            <label>CNPJ:</label>
+        <input type="text" name="cnpj">
+        </div>
+
+       <div class="campo">
+         <label>Endereço da empresa:</label>
+        <input type="text" name="endereco_empresa">
+       </div>
+
+       <div class="campo">
+         <label>Telefone:</label>
+        <input type="tel" name="telefone_empresa">
+       </div>
+        
+        <div class="campo">
+            <label>Renda mensal:</label>
+        <input type="text" name="renda_mensal">
+        </div>
+
+        <legend>Dados bancários</legend><br>
+
+        <div class="campo">
+            <label>Agência:</label>
+        <input type="text" name="agencia" required>
+        </div>
+
+        <div class="campo">
+            <label>Conta:</label>
+        <input type="text" name="conta" required>
+        </div>
+
+        <div class="campo">
+            <label>Tipo:</label>
+        <select name="tipo_conta">
+            <option value="corrente">Corrente</option>
+            <option value="poupanca">Poupança</option>
+        </select>
+        </div><br>
+
+        <legend>Contato referencial</legend><br>
+
+       <div class="campo">
+         <label>Nome da pessoa:</label>
+        <input type="text" name="contato_referencial" required>
+       </div>
+
+       <div class="campo">
+         <label>Grau de parentesco:</label>
+        <input type="text" name="grau_parentesco" placeholder="mãe, pai, esposo(a), amigo(a), colega, outros" required>
+       </div>
+
+        <div class="campo">
+            <label>Quem te indicou?</label>
+        <input type="text" name="indicacao">
+        </div><br>
+       
+
+        <button type="submit" id="btnEnviar">Enviar</button>
+        
+    </form>
+
+ <footer>
+   
+   <div class="conteudoFooter">
+      <img src="img/deliviery.png" class="imgRede" id="imgSvg"  alt="">
+      
+      <h3>Entrega rápida</h3>      
+
+      <p>Realizamos entregas em todo o país. Receba seu veículo novo no conforto da sua casa.</p>
+    </div>
+
+     
+    <div class="conteudoFooter">
+       <img src="img/globalRedes.png" class="imgRede" id="iconRedes"  alt="globalRedes">
+      <h3 id="tituloRedesSociais">Redes sociais</h3>
+      
+      <a href="https://www.instagram.com/brandscarsstore/" target="_blank"> <img src="img/insta.png" class="imgRede" alt="instagram"> </a>
+
+      <a href="https://www.facebook.com/5tg0mf0bzj" target="_blank"> <img src="img/face.png" class="imgRede" alt="facebook"> </a>
+
+      <a href="https://www.tiktok.com/@brandscarsstore?is_from_webapp=1&sender_device=pc" target="_blank"> <img src="img/tikTok.png" class="imgRede" alt="tiktok"> </a>
+
+      <a href="https://wa.me/5511947477637" target="_blank"> <img src="img/whats.png"  class="imgRede" alt="whatsaap"> </a>
+    </div>
+    <div class="conteudoFooter">
+      <img src="img/locationRodape.png"  class="imgRede" alt="">
+      <h3>Endereço</h3><p>Rua Caraipé das Águas, 626  Jardim dos Ipês - São Paulo/SP</p>
+    </div>
+		
+		<div class="conteudoFooter" id="linksTodosCarrosFooter">
+			  <ul>
+				<li><a href="chevrolet.html"> Chevrolet <a/></li>
+				<li><a href="fiat.html"> Fiat<a/></li>
+				<li><a href="ford.html"> Ford<a/></li>
+				<li><a href="hyundai.html"> Hyundai<a/></li>
+				<li><a href="volkswagem.html"> Volkswagem<a/></li>
+				</ul>
+			 </div>
+   
+
+ </footer>
+
+ <div id="zapFixo"> <a href="https://wa.me/5511947477637" target="_blank"> <img src="img/zap.png" alt=""> </a> </div>
+
+   <div id="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9188581496023!2d-46.41401797220772!3d-23.49943196425741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6391c209bb3d%3A0xbfb99e4cb2d95656!2sRua%20Caraip%C3%A9%20das%20%C3%81guas%2C%20626%20-%20Jardim%20dos%20Ipes%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008161-360!5e0!3m2!1spt-BR!2sbr!4v1748822941208!5m2!1spt-BR!2sbr" width="" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+   <div id="autoral">
+   <p>  &copy; Todos os direitos reservados - BrandsCars &reg; </p>
+    <a href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5511995521110&amp;text=Oi Mauricio,%20gostaria%20de%20fazer%20um%20orçamento." target="_blank" style="text-decoration: underline;color: #ccc;">By Mauricio Honorato</a>
+   </div>
+
+
+</div><!--Container geral-------------------->
+</main>  
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js" defer></script>
+
+<script>
+
+    
+
+document.getElementById("formularioCadastro").addEventListener("submit", function (event) {
+    let nomeEmpresa = document.querySelector("input[name='nome_empresa']").value.trim();
+    let funcaoAutonomo = document.querySelector("input[name='funcao']").value.trim();
+    let cnpj = document.querySelector("input[name='cnpj']").value.trim();
+
+    if (!nomeEmpresa && !funcaoAutonomo && !cnpj) {
+        Swal.fire({
+    title: '<h1>Olá!</h1>',
+    html: 'Você deve preencher ao menos um dos campos "Dados do empregador, Autônomo ou Empresário." ',
+    icon: 'success'
+  });
+        event.preventDefault();
+        return;
+    }
+});
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
